@@ -6,14 +6,16 @@
   "description": "When learning Coursera, it is a chrome extension that fixes the video at the top and scrolls only the script below.",
   "icons": {
     "16": "images/icon-16.png",
-    "32": "images/icon-32.png"
+    "32": "images/icon-32.png",
+    "128": "images/icon-128.png"
   },
   "permissions": ["tabs", "activeTab"],
   "action": {
     "default_popup": "main.html",
     "default_icon": {
       "16": "images/icon-16.png",
-      "32": "images/icon-32.png"
+      "32": "images/icon-32.png",
+      "128": "images/icon-128.png"
     }
   },
   "content_scripts": [
