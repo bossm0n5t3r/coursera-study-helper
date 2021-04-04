@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "coursera-study-helper",
+  "author": "bossm0n5t3r",
+  "version": "0.0.1",
+  "description": "When learning Coursera, it is a chrome extension that fixes the video at the top and scrolls only the script below.",
+  "permissions": ["tabs", "activeTab"],
+  "action": {
+    "default_popup": "main.html",
+    "default_icon": {
+      "16": "images/icon-16.png",
+      "32": "images/icon-32.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.coursera.org/learn/*/lecture/*"],
+      "js": ["jquery-3.6.0.min.js", "script.js"]
+    }
+  ]
+}
